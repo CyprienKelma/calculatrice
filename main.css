@@ -8,10 +8,11 @@
 body {
   text-align: center;
   margin: 0;
-  background: #ede599;
+  background: #20AF94;
   justify-content: center;
   height: 150vh;
 }
+/* #ede599 */
 
 #calculatrice {
   margin-top: 40px;
@@ -31,7 +32,7 @@ body {
   margin-bottom: 15px;
   padding: 2px;
   border-radius: 7px;
-  color: #fff9e9;
+  color: #edb518;
   background-color: #1b1c1c;
   border: none;
   box-sizing: border-box;
@@ -39,6 +40,11 @@ body {
 
 .operation {
   color: #edb518;
+}
+.operation:hover{
+  cursor: pointer;
+  background-color: #20AF94;
+  transition: background-color 0.2s;
 }
 #AC {
   color: #cc0732;
@@ -70,12 +76,13 @@ button {
   background-color: #1b1c1c;
   border: none;
   border-radius: 8px;
-  color: #e0e1dd;
+  color: #20AF94;
+  /* #15b286 */
   box-shadow: -2px 2px 35px -7.5px rgba(0, 0, 0, 0.19);
 }
 button:hover{
   cursor: pointer;
-  background-color: #ede599a7;
+  background-color: #edb518;
   transition: background-color 0.2s;
 }
 button:active{
