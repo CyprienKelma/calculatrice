@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { ValideController } from './valide.controller';
-import { ValideService } from './valide.service';
+import { SuccessController } from './success.controller';
+import { SuccessService } from './success.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Valide } from './valide.entity';
+import { Success } from './success.entity';
 
 @Module({
   imports:[
@@ -15,10 +15,10 @@ import { Valide } from './valide.entity';
       database: 'Calculatrice',
       entities: ["dist/**/*.entity{.ts,.js}"],
       synchronize: false,
-    }), TypeOrmModule.forFeature([Valide]),
+    }), TypeOrmModule.forFeature([Success]),
   ],
-  controllers: [ValideController],
-  providers: [ValideService]
+  controllers: [successControler],
+  providers: [successService]
 })
-export class ValideModule {}
+export class SuccessModule {}
   
