@@ -1,0 +1,91 @@
+
+#info-nom {
+  margin-left: 20px;
+  text-align: left;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  background-color: #20AF94;
+  justify-content: center;
+  height: 150vh;
+}
+/* #ede599 */
+
+#calculatrice {
+  margin-top: 40px;
+  margin-left: 390px;
+  max-width: 330px;
+  background-color: #000407;
+  border-radius: 15px;
+  padding: 25px 20px 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.19);
+}
+
+#calcul {
+  width: 100%;
+  height: 84px;
+  font-size: 30px;
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 2px;
+  border-radius: 7px;
+  color: #edb518;
+  background-color: #1b1c1c;
+  border: none;
+  box-sizing: border-box;
+}
+
+.operation {
+  color: #edb518;
+}
+.operation:hover{
+  cursor: pointer;
+  background-color: #20AF94;
+  transition: background-color 0.2s;
+}
+#AC {
+  color: #cc0732;
+  font-weight: 520;
+}
+#AC:hover{
+  background-color: #0a62d0;
+  transition: background-color 0.2s;
+}
+#remove {
+  color: #edb518;
+}
+.equal {
+  color: #0a62d0;
+  font-size: 35px;
+  font-weight: 500;
+}
+.equal:hover{
+  background-color: #cc0732;
+  transition: background-color 0.2s;
+}
+
+button {
+  margin: 8px 4px;
+  width: calc(25% - 20px);
+  height: 60px;
+  font-size: 35px;
+  float: none;
+  background-color: #1b1c1c;
+  border: none;
+  border-radius: 8px;
+  color: #20AF94;
+  /* #15b286 */
+  box-shadow: -2px 2px 35px -7.5px rgba(0, 0, 0, 0.19);
+}
+button:hover{
+  cursor: pointer;
+  background-color: #edb518;
+  transition: background-color 0.2s;
+}
+button:active{
+  transform: scale(1.12);
+}
