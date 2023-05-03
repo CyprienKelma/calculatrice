@@ -1,22 +1,22 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
-import { ValideService } from './valide.service';
-import { Valide } from './valide.entity';
+import { SuccessService } from './success.service';
+import { Success } from './success.entity';
 
-@Controller('valide')
-export class ValideController {
+@Controller('success')
+export class SuccessController {
 
-    constructor(private readonly valideService: ValideService) {}
+    constructor(private readonly successService: SuccessService) {}
 
     @Post()
     createValid(
         @Body('timeTakenMs') timeTakenMs: number,
     ): Promise<Valide> {
-        return this.valideService.createValid(timeTakenMs);
+        return this.SuccessService.createValid(timeTakenMs);
     }
 
     @Get()
     getMoyenne(): Promise<number> {
-        return this.valideService.getMoyenne();
+        return this.successService.getMoyenne();
     }
 
 }
